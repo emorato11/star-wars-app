@@ -12,17 +12,15 @@
 <style lang="scss" scoped>
 
 .footer {
-    position: fixed;
-    bottom: 0;
     width: 100%;
-    background-color: #424040;
+    background-color: $dark_grey;
 
     & .description {
         width: 100%;
         font-weight: bold;
         font-family: "Star Jedi", arial;
         font-size: 1.25rem;
-        color: #f8c10a;
+        color: $gold;
         margin: 0.25rem;
     }
 }

@@ -1,0 +1,20 @@
+// colors
+$dark_grey: #424040;
+$gold: #f8c10a;
+
+// sizes
+$xs: 0.5rem;
+$s: 0.75rem;
+$m: 1rem;
+$l: 1.25rem;
+$xl: 1.75rem;
+
+.default-button {
+    background-color: $dark_grey !important;
+    font-size: $l !important;
+}
+
+.medium-button {
+    background-color: $dark_grey !important;
+    font-size: $m !important;
+}

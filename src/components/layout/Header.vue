@@ -24,14 +24,14 @@
 .header {
     display: flex;
     align-items: center;
-    background: #424040;
+    background: $dark_grey;
 
     & .title {
         width: 100%;
         font-weight: bold;
         font-size: 2.25rem;
         font-family: "Star Jedi", arial;
-        color: #f8c10a;
+        color: $gold;
     }
 }
 
