@@ -2,9 +2,6 @@ module.exports = {
     devServer: {
       https: true
     },
-    publicPath: process.env.NODE_ENV === 'production'
-    ? '/star-wars-app/'
-    : '/',
     css: {
       loaderOptions: {
           sass: {
