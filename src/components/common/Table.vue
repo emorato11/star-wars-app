@@ -22,8 +22,9 @@
             :items="items"
             :busy="isBusy"
             :fields="fields"
-            :current-page="currentPage"
             :per-page="perPage"
+            empty-text="No data to show"
+            empty-filtered-text="No data matching your request"
             :filter="filter"
             label-sort-asc=""
             label-sort-desc=""
@@ -43,18 +44,7 @@
                     class="mr-1 medium-button">
                 Go to detail
                 </b-button>
-                <!-- <b-button size="sm" @click="row.toggleDetails">
-                {{ row.detailsShowing ? 'Hide' : 'Show' }} Details
-                </b-button> -->
             </template>
-
-            <!-- <template #row-details="row">
-                <b-card>
-                    <ul>
-                        <li v-for="(value, key) in row.item" :key="key">{{ key }}: {{ value }}</li>
-                    </ul>
-                </b-card>
-            </template> -->
             <template #table-busy>
                 <div class="text-center spinner my-4">
                     <b-spinner class="align-middle"></b-spinner>
@@ -102,7 +92,7 @@
                     { key: 'actions', label: '' }
                 ],
                 currentPage: 1,
-                perPage: 0,
+                perPage: 10,
                 filter: null,
                 filteredItems: null,
                 filterOn: [],
